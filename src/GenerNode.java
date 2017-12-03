@@ -74,8 +74,6 @@ public class GenerNode {
 	            	    LocateRegistry.createRegistry(Integer.parseInt(args[1])); 
 	            		String address = "rmi://localhost:"+args[1]+"/RHello";
 	                Naming.bind(address,rhello); 
-
-
 	                System.out.println(">>>>>Successfully Binding remote object"); 
 	            } catch (RemoteException e) { 
 	                System.out.println("Abnormal1"); 
